@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Largest Number</title>
+</head>
+<body>
+    <h2>Task 7: Find Second Largest Number</h2>
+    <p>Array: [12, 45, 7, 89, 23]</p>
+    <button onclick="findSecondLargest()">Find Second Largest</button>
+    <p id="result"></p>
+
+    <script>
+        function findSecondLargest() {
+            const arr = [12, 45, 7, 89, 23];
+            const uniqueSorted = [...new Set(arr)].sort((a, b) => b - a);
+            const secondLargest = uniqueSorted[1];
+            document.getElementById('result').textContent = "Second Largest: " + secondLargest;
+        }
+    </script>
+</body>
+</html>

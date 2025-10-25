@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Digits</title>
+</head>
+<body>
+    <h2>Task 8: Count Digits of a Number</h2>
+    <input type="number" id="digitInput" placeholder="Enter a number">
+    <button onclick="countDigits()">Count Digits</button>
+    <p id="result"></p>
+
+    <script>
+        function countDigits() {
+            const number = Math.abs(parseInt(document.getElementById('digitInput').value));
+            const digitCount = number.toString().length;
+            document.getElementById('result').textContent = "Digit Count: " + digitCount;
+        }
+    </script>
+</body>
+</html>

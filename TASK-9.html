@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smallest Number in an Array</title>
+</head>
+<body>
+    <h2>Task 9: Find Smallest Number in an Array</h2>
+    <p>Array: [34, 7, 23, 32, 5, 62]</p>
+    <button onclick="findSmallest()">Find Smallest</button>
+    <p id="result"></p>
+
+    <script>
+        function findSmallest() {
+            const arr = [34, 7, 23, 32, 5, 62];
+            const min = Math.min(...arr);
+            document.getElementById('result').textContent = "Smallest Number: " + min;
+        }
+    </script>
+</body>
+</html>

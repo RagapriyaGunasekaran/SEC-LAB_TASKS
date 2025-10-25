@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Maximum in an Array</title>
+</head>
+<body>
+    <h2>Task 3: Find Maximum in an Array</h2>
+    <p>Array: [10, 25, 3, 7, 89, 14]</p>
+    <button onclick="findMax()">Find Maximum</button>
+    <p id="result"></p>
+
+    <script>
+        function findMax() {
+            const arr = [10, 25, 3, 7, 89, 14];
+            const max = Math.max(...arr);
+            document.getElementById('result').textContent = "Maximum: " + max;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <h2>Task 6: Palindrome Checker</h2>
+    <input type="text" id="palindromeInput" placeholder="Enter a string">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkPalindrome() {
+            const str = document.getElementById('palindromeInput').value.toLowerCase().replace(/[^a-z0-9]/g, '');
+            const reversed = str.split('').reverse().join('');
+            const isPalindrome = str === reversed;
+            document.getElementById('result').textContent = isPalindrome ? "Palindrome" : "Not Palindrome";
+        }
+    </script>
+</body>
+</html>
